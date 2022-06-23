@@ -1,0 +1,14 @@
+section{
+    h3{
+        display: flex;
+        justify-content: center;
+        background-color: $dd;
+        padding: 10px;
+        border: solid 5px;
+    }
+    p{
+        display: flex;
+        justify-content: start;
+        color: white;
+    }
+}

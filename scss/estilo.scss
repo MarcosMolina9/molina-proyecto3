@@ -1,0 +1,292 @@
+$ff: black;
+$gg: rgb(243, 3, 3);
+$dd: rgb(252, 252, 9);
+$ss: rgb(10, 238, 10);
+
+
+body{
+    background-color: blue;
+}
+
+@mixin bucle {
+        .nav-a{
+        background-color: $ff;
+        .ul-a{
+            list-style-type: none;
+            display: flex;
+            justify-content: space-around;
+            .link3{
+                padding: 10px;
+                margin: 10px;
+                &:hover{
+                    background-color: $ss;
+                }
+                a{
+                text-decoration: none;
+                color: white;
+                &:hover{
+                    color: $ff;
+                }
+                }
+                
+            }
+        }
+    }
+
+    
+    
+}
+
+@import "header";
+
+@import "section";
+
+@import "footer";
+
+
+/*scss estilos inventory.html*/
+
+header{
+    @include bucle
+}
+
+section{
+    .ol-a{
+        background-color: $ff;
+        .itens{
+            color: white;
+        }
+    }
+
+    h2{
+        display: flex;
+        justify-content: center;
+        background: linear-gradient($gg, $dd, $ss);
+        padding: 10px;
+        border: solid 5px;
+    }
+    p{
+        display: flex;
+        justify-content: start;
+        color: white;
+    }
+}
+
+footer{
+    .redes{
+        display: flex;
+        justify-content: space-around;
+        background-color: $ff;
+        a{
+            color: white;
+            text-decoration: none;
+        }
+        
+        
+    }
+}
+
+/*scss estilos marketplace.html*/
+
+header{
+    @include bucle
+}
+
+section{
+    h1{
+        background-color: $ff;
+        color: $gg;
+        display: flex;
+        justify-content: center;
+    }
+      p{
+        display: flex;
+        justify-content: start;
+        color: white;
+    }
+    li{
+        list-style-type: none;
+        padding: 30px;
+    }
+    a{
+        color: white;
+        text-decoration: none;
+    }
+
+}
+
+/*estilo tokenomics.html*/
+
+
+    .container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-areas:
+        "nav-bar nav-bar";}
+        .nav-bar{
+            background-color: red;
+            grid-area: nav-bar;
+            .nav-ul{ 
+                display: flex;
+                justify-content: space-around;
+                .link2{
+                    list-style-type: none;
+                }
+                a{
+                    text-decoration: none;
+                    color: white;
+                    &hover{
+                        color: black; 
+                    }
+
+                }
+              }
+          }
+          
+  .divi{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "li img img ."
+    "table img img ."
+    ;
+  }      
+
+    
+  .ul-li{
+    grid-area: li;  
+    color: white;
+    list-style-type: none;
+  }
+  
+  .imgt{
+    grid-area: img;
+  }
+  
+  .table{
+    grid-area: table;
+    display: flex;
+    width: 75%;
+    border-collapse: collapse; 
+  
+  }
+
+  th, td{
+    border: solid 1px black;
+    padding: 0;
+    background: radial-gradient(white, red);
+   
+}
+
+  .pie{
+    display: flex;
+    background-color: green;
+    margin: 30px 0px;
+    
+  }
+  
+  .redes a{
+    color: white;
+   
+  }
+
+  img{
+    display: flex;
+    width: 100%;
+}
+
+  
+/*responsive de tokenomics.html*/
+
+@media screen and (max-width: 400px){
+
+    .container{
+        display: grid;
+        max-width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr); 
+        grid-template-areas:
+        "nav-bar nav-bar"
+        ;
+    }
+    
+    .nav-ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    
+    }
+    
+    
+    .divi{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: 
+        "li li ."
+        "img img ."
+        "table table ."
+        ;
+    }
+    
+    
+    .imgt{
+        margin: 0px 0px 30px 0px;
+
+        
+    }
+
+    img{
+        display: flex;
+        width: 100%;
+    }
+    
+    }
+
+    /*responsive tokenomics.html tablet*/
+
+@media screen and (min-width: 401px) and (max-width: 768px){
+
+    .container{
+        display: grid;
+        max-width: 100%;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(1, 1fr); 
+        grid-template-areas:
+        "nav-bar"
+        ;
+    }
+    
+    
+    .divi{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+        "li . table ."
+        "img img . ."
+        ;
+    }
+
+    img{
+        display: flex;
+        width: 100%;
+    }
+
+}
+
+
+
+  
+  
+  
+ 
+  
+  
+ 
+  
+  
+  
+

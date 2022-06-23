@@ -1,0 +1,41 @@
+header{
+    .h1{
+        background-color: $ff;
+        color: $gg;
+        display: flex;
+        justify-content: center;
+
+    }
+    .logo1{
+        .img{
+            display: flex;
+            width: 100px;
+            margin: 10px;
+       }
+    }
+
+    .navbar1{
+        background-color: $gg;
+        margin: 10px;
+        .nav1{
+            list-style-type: none;
+            display: flex;
+            justify-content: space-around;
+            .link{
+                padding: 10px;
+                margin: 10px;
+               &:hover{
+                background-color: $ff;
+               } 
+               a{
+                text-decoration: none;
+                color: white;
+                &:hover{
+                    color: $dd;
+                }
+               }
+            }
+        }
+    }
+
+}

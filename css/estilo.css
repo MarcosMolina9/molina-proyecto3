@@ -1,0 +1,362 @@
+body {
+  background-color: blue; }
+
+header .h1 {
+  background-color: black;
+  color: #f30303;
+  display: flex;
+  justify-content: center; }
+
+header .logo1 .img {
+  display: flex;
+  width: 100px;
+  margin: 10px; }
+
+header .navbar1 {
+  background-color: #f30303;
+  margin: 10px; }
+  header .navbar1 .nav1 {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around; }
+    header .navbar1 .nav1 .link {
+      padding: 10px;
+      margin: 10px; }
+      header .navbar1 .nav1 .link:hover {
+        background-color: black; }
+      header .navbar1 .nav1 .link a {
+        text-decoration: none;
+        color: white; }
+        header .navbar1 .nav1 .link a:hover {
+          color: #fcfc09; }
+
+section h3 {
+  display: flex;
+  justify-content: center;
+  background-color: #fcfc09;
+  padding: 10px;
+  border: solid 5px; }
+
+section p {
+  display: flex;
+  justify-content: start;
+  color: white; }
+
+footer .style {
+  display: flex;
+  justify-content: space-around;
+  background-color: #0aee0a;
+  color: #f30303; }
+
+/*scss estilos inventory.html*/
+header .nav-a {
+  background-color: black; }
+  header .nav-a .ul-a {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around; }
+    header .nav-a .ul-a .link3 {
+      padding: 10px;
+      margin: 10px; }
+      header .nav-a .ul-a .link3:hover {
+        background-color: #0aee0a; }
+      header .nav-a .ul-a .link3 a {
+        text-decoration: none;
+        color: white; }
+        header .nav-a .ul-a .link3 a:hover {
+          color: black; }
+
+section .ol-a {
+  background-color: black; }
+  section .ol-a .itens {
+    color: white; }
+
+section h2 {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(#f30303, #fcfc09, #0aee0a);
+  padding: 10px;
+  border: solid 5px; }
+
+section p {
+  display: flex;
+  justify-content: start;
+  color: white; }
+
+footer .redes {
+  display: flex;
+  justify-content: space-around;
+  background-color: black; }
+  footer .redes a {
+    color: white;
+    text-decoration: none; }
+
+/*scss estilos marketplace.html*/
+header .nav-a {
+  background-color: black; }
+  header .nav-a .ul-a {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around; }
+    header .nav-a .ul-a .link3 {
+      padding: 10px;
+      margin: 10px; }
+      header .nav-a .ul-a .link3:hover {
+        background-color: #0aee0a; }
+      header .nav-a .ul-a .link3 a {
+        text-decoration: none;
+        color: white; }
+        header .nav-a .ul-a .link3 a:hover {
+          color: black; }
+
+section h1 {
+  background-color: black;
+  color: #f30303;
+  display: flex;
+  justify-content: center; }
+
+section p {
+  display: flex;
+  justify-content: start;
+  color: white; }
+
+section li {
+  list-style-type: none;
+  padding: 30px; }
+
+section a {
+  color: white;
+  text-decoration: none; }
+
+/*estilo tokenomics.html*/
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-areas: "nav-bar nav-bar"; }
+
+.nav-bar {
+  background-color: red;
+  grid-area: nav-bar; }
+  .nav-bar .nav-ul {
+    display: flex;
+    justify-content: space-around; }
+    .nav-bar .nav-ul .link2 {
+      list-style-type: none; }
+    .nav-bar .nav-ul a {
+      text-decoration: none;
+      color: white; }
+      .nav-bar .nav-ul ahover {
+        color: black; }
+
+.divi {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "li img img ."
+ "table img img ."; }
+
+.ul-li {
+  grid-area: li;
+  color: white;
+  list-style-type: none; }
+
+.imgt {
+  grid-area: img; }
+
+.table {
+  grid-area: table;
+  display: flex;
+  width: 75%;
+  border-collapse: collapse; }
+
+th, td {
+  border: solid 1px black;
+  padding: 0;
+  background: radial-gradient(white, red); }
+
+.pie {
+  display: flex;
+  background-color: green;
+  margin: 30px 0px; }
+
+.redes a {
+  color: white; }
+
+img {
+  display: flex;
+  width: 100%; }
+
+/*responsive de tokenomics.html*/
+@media screen and (max-width: 400px) {
+  .container {
+    display: grid;
+    max-width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas: "nav-bar nav-bar"; }
+  .nav-ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: start; }
+  .divi {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "li li ."
+ "img img ."
+ "table table ."; }
+  .imgt {
+    margin: 0px 0px 30px 0px; }
+  img {
+    display: flex;
+    width: 100%; } }
+
+/*responsive tokenomics.html tablet*/
+@media screen and (min-width: 401px) and (max-width: 768px) {
+  .container {
+    display: grid;
+    max-width: 100%;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas: "nav-bar"; }
+  .divi {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "li . table ."
+ "img img . ."; }
+  img {
+    display: flex;
+    width: 100%; } }
+
+
+
+
+
+
+    /*responsive index.html*/
+
+@media screen and (max-width: 400px){
+
+  .header-container{
+      display: grid;
+      max-width: 100%;
+      grid-template-columns: 100%;
+      grid-template-rows: (3, 1fr);
+      grid-template-areas: 
+      "logo" "h1" "navbar";
+  }
+
+
+  .h1{
+      grid-area: h1;
+      display: flex;
+      justify-content: center center;
+      background-color: black;
+      width: 100%;
+  }
+
+
+  .logo1{
+      grid-area: logo;
+      display: flex;
+      justify-content: start;
+  }
+
+  .navbar1{
+      display: flex;
+      justify-content: start;
+
+  }
+
+  .navbar1 li {
+      grid-area: navbar;
+      display: flex;
+      justify-content: space-around;        
+  }
+
+  .nav1{
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+
+  }
+
+  .footer-container{
+      display: grid;
+      grid-template-columns: 100%;
+  }
+
+  .style{
+      display: flex;
+      flex-direction: column;
+      background-color: green;
+      color: yellow;
+  }
+
+}
+
+/*responsive index.html tablet*/
+
+@media screen and (min-width: 401px) and (max-width: 768px){
+
+  .header-container{
+      display: grid;
+      max-width: 100%;
+      grid-template-columns: auto;
+      grid-template-rows: (2, 1fr);
+      grid-template-areas: 
+      "navbar . logo"
+      "h1 h1 h1"
+      ;
+  }
+
+
+  .h1{
+      grid-area: h1;
+      display: flex;
+      justify-content: center center;
+      background-color: black;
+      width: 100%;
+  }
+
+
+  .logo{
+      grid-area: logo;
+      display: flex;
+      justify-content: end;
+  }
+
+  .navbar{
+      display: flex;
+      justify-content: start;
+
+  }
+
+  .navbar li {
+      grid-area: navbar;
+      display: flex;
+      justify-content: space-around;        
+  }
+
+  .nav{
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+
+  }
+
+  .footer-container{
+      display: grid;
+      grid-template-columns: 100%;
+  }
+
+  .style{
+      display: flex;
+      flex-direction: column;
+      background-color: green;
+      color: yellow;
+  }
+
+}
