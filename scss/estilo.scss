@@ -9,29 +9,25 @@ body{
 }
 
 @mixin bucle {
-        .nav-a{
-        background-color: $ff;
-        .ul-a{
-            list-style-type: none;
+    .nav-bar{
+        background-color: red;
+        grid-area: nav-bar;
+        .nav-ul{ 
             display: flex;
             justify-content: space-around;
-            .link3{
-                padding: 10px;
-                margin: 10px;
-                &:hover{
-                    background-color: $ss;
-                }
-                a{
+            .link2{
+                list-style-type: none;
+            }
+            a{
                 text-decoration: none;
                 color: white;
-                &:hover{
-                    color: $ff;
+                &hover{
+                    color: black; 
                 }
-                }
-                
+
             }
-        }
-    }
+          }
+      }
 
     
     
@@ -42,6 +38,134 @@ body{
 @import "section";
 
 @import "footer";
+
+ /*responsive index.html*/
+
+ @media screen and (max-width: 400px){
+
+    .header-container{
+        display: grid;
+        max-width: 100%;
+        grid-template-columns: 100%;
+        grid-template-rows: (3, 1fr);
+        grid-template-areas: 
+        "logo" "h1" "navbar";
+    }
+  
+  
+    .h1{
+        grid-area: h1;
+        display: flex;
+        justify-content: center center;
+        background-color: black;
+        width: 100%;
+    }
+  
+  
+    .logo1{
+        grid-area: logo;
+        display: flex;
+        justify-content: start;
+    }
+  
+    .navbar1{
+        display: flex;
+        justify-content: start;
+  
+    }
+  
+    .navbar1 li {
+        grid-area: navbar;
+        display: flex;
+        justify-content: space-around;        
+    }
+  
+    .nav1{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+  
+    }
+  
+    .footer-container{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+  
+    .style{
+        display: flex;
+        flex-direction: column;
+        background-color: green;
+        color: yellow;
+    }
+  
+  }
+  
+  /*responsive index.html tablet*/
+  
+  @media screen and (min-width: 401px) and (max-width: 768px){
+  
+    .header-container{
+        display: grid;
+        max-width: 100%;
+        grid-template-columns: auto;
+        grid-template-rows: (2, 1fr);
+        grid-template-areas: 
+        "navbar . logo"
+        "h1 h1 h1"
+        ;
+    }
+  
+  
+    .h1{
+        grid-area: h1;
+        display: flex;
+        justify-content: center center;
+        background-color: black;
+        width: 100%;
+    }
+  
+  
+    .logo1{
+        grid-area: logo;
+        display: flex;
+        justify-content: end;
+    }
+  
+    .navbar1{
+        display: flex;
+        justify-content: start;
+  
+    }
+  
+    .navbar1 li {
+        grid-area: navbar;
+        display: flex;
+        justify-content: space-around;        
+    }
+  
+    .nav1{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+  
+    }
+  
+    .footer-container{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+  
+    .style{
+        display: flex;
+        flex-direction: column;
+        background-color: green;
+        color: yellow;
+    }
+  
+  }
+
+
 
 
 /*scss estilos inventory.html*/
@@ -124,25 +248,6 @@ section{
         grid-template-rows: repeat(1, 1fr);
         grid-template-areas:
         "nav-bar nav-bar";}
-        .nav-bar{
-            background-color: red;
-            grid-area: nav-bar;
-            .nav-ul{ 
-                display: flex;
-                justify-content: space-around;
-                .link2{
-                    list-style-type: none;
-                }
-                a{
-                    text-decoration: none;
-                    color: white;
-                    &hover{
-                        color: black; 
-                    }
-
-                }
-              }
-          }
           
   .divi{
     display: grid;
@@ -199,6 +304,7 @@ section{
 
   
 /*responsive de tokenomics.html*/
+/*el responsive tambien afecta a inventory.html y marketplace.html*/
 
 @media screen and (max-width: 400px){
 
@@ -277,7 +383,7 @@ section{
 
 }
 
-
+  
 
   
   
