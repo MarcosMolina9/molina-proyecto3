@@ -103,7 +103,10 @@ footer .style {
   .logo1 {
     grid-area: logo;
     display: flex;
-    justify-content: end; }
+    justify-content: end;
+    transition: height 2s, width 2s, transform 2s; }
+    .logo1:hover {
+      transform: rotate(1440deg); }
   .navbar1 {
     display: flex;
     justify-content: start; }

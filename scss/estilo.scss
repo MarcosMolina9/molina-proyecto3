@@ -130,6 +130,10 @@ body{
         grid-area: logo;
         display: flex;
         justify-content: end;
+        transition: height 2s, width 2s, transform 2s;
+        &:hover{
+            transform: rotate(1440deg);
+             }
     }
   
     .navbar1{
