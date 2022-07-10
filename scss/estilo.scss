@@ -49,7 +49,7 @@ body{
         grid-template-columns: 100%;
         grid-template-rows: (3, 1fr);
         grid-template-areas: 
-        "logo" "h1" "navbar";
+        "h1" "logo" "navbar";
     }
   
   
@@ -65,7 +65,7 @@ body{
     .logo1{
         grid-area: logo;
         display: flex;
-        justify-content: start;
+        justify-content: center;
     }
   
     .navbar1{

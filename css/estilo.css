@@ -55,7 +55,7 @@ footer .style {
     max-width: 100%;
     grid-template-columns: 100%;
     grid-template-rows: 3, 1fr;
-    grid-template-areas: "logo" "h1" "navbar"; }
+    grid-template-areas: "h1" "logo" "navbar"; }
   .h1 {
     grid-area: h1;
     display: flex;
@@ -65,7 +65,7 @@ footer .style {
   .logo1 {
     grid-area: logo;
     display: flex;
-    justify-content: start; }
+    justify-content: center; }
   .navbar1 {
     display: flex;
     justify-content: start; }
